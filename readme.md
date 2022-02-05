@@ -22,9 +22,13 @@
   </p>
 </div>
 
+## About Me
+I've been a web developer for over 25 years[*](https://web.archive.org/web/19961220192514/http://agate.net/), and in that time I've used vanilla CSS, Sass, Styletron, Styled Components, and everything in between. I've always wanted a CSS architecture that is _**predictable**_, _**maintainable**_, and that results in the absolute _**minimum possible output**_. I've distilled all of my experience into this tool.
+
+
 ## About The Project
 
-I've been a web developer for over 25 years[*](https://web.archive.org/web/19961220192514/http://agate.net/), and in that time I've used vanilla CSS, Sass, Styletron, Styled Components, and everything in between. I've always wanted a CSS architecture that is _**predictable**_, _**maintainable**_, and that results in the absolute _**minimum possible output**_. I've distilled all of my experience into this tool.
+
 
 <h3 align="center">This is my way of giving back to the web development community.</h3>
 
