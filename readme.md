@@ -23,23 +23,23 @@
 </div>
 
 ## About Me
-I've been a web developer for over 25 years[*](https://web.archive.org/web/19961220192514/http://agate.net/), and in that time I've used vanilla CSS, Sass, Styletron, Styled Components, and everything in between. I've always wanted a CSS architecture that is _**predictable**_, _**maintainable**_, and that results in the absolute _**minimum possible output**_. I've distilled all of my experience into this tool. @ptb/style the contribution I have wanted to make to the developer community for over 4 years. 
+I've been a web developer for over 25 years[*](https://web.archive.org/web/19961220192514/http://agate.net/), and in that time I've used vanilla CSS, Sass, Styletron, Styled Components, and everything in between. I've always wanted a CSS architecture that is _**predictable**_, _**maintainable**_, and that results in the absolute _**minimum possible output**_. I've distilled all of my experience into this tool. @ptb/style the contribution I have wanted to make and give back to the developer community for over 4 years. 
 
 
 ## About The Project
 
-<h3 align="center">This tool includes features that reduce or eliminate many common pain points that front end web developers encounter when designing and developing code for the web:</h3>
+<h3 align="center">This tool includes features that reduce or eliminate many common pain points that front end web developers (we) encounter when designing and developing code for the web:</h3>
 -
 
 ### Decrease Cognitive Overhead
 
 Don't worry about naming things, style order, specificity, compressing output, build tools, plugins, etc. Have I used this before? If I change it here, what else will change? What should I name this? Keeping all those concerns and details in mind is a thing of the past.
 
-### Simplicity
+### Style Simplicity
 
-Styles are declarable. This tool converts style rules applies them to the page.  There is only one function to learn and if you know CSS and JavaScript already, it will look very familiar. It parses styles, selectors, shortcuts, and media queries using a single function. It creates unique class names automatically. Styles are ordered simply and consistently.  Selectors are parsed, de-duplicated, and grouped with identical declarations automatically.
+Styles are declarable. This tool converts style rules and applies them to the page.  There is only one function to learn and if you know CSS and JavaScript already, it will look very familiar. It parses styles, selectors, shortcuts, and media queries using a single function. It creates unique class names automatically. Styles are ordered simply and consistently.  Selectors are parsed, de-duplicated, and grouped with identical declarations automatically.
 
-### No More Naming
+### No More Class Naming
 
 Class names are generated automatically in a _**consistent**_ and predictable way.  The same input will result in the same output, and is based on the CSS property used and their values; whether rendered at build time, server-side rendered, or at runtime in the browser.
 
@@ -63,7 +63,7 @@ Using `$`-prefixed variables, set up CSS property abbreviations, media query sho
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Flexibility
+### Runtime Flexibility
 
 #### Dynamic Runtime
 
@@ -74,16 +74,16 @@ Alternatively, styles can be "compiled away" leaving just class names and a mini
 
 If you need client-side rendering (CSR), server-side rendering (SSR), or static at build time (SSG), it's covered.
 
-#### Media Queries
+### Media Queries
 
 Media queries can be specified at the top of a group of styles, at the bottom under the CSS property itself, or anywhere in between. Media queries can also be nested.
 
-#### Any and All Selectors
+### Any and All Selectors
 
 Use type selectors, class selectors, ID selectors, universal selectors, attribute selectors, state selectors, sibling, child, or descendant selectors, pseudo classes, and pseudo elements. The `&` nesting selector from Sass is also supported. In addition, `%`-prefixed placeholder class names and a special "self-selector" can be used when needed. The self- selector re-uses the `&` character to group a set of styles under a single class name. Atomic or grouped class names: it's your choice.
 
 
-#### Maintainable
+### Maintainable
 All styles are stored as plain JavaScript objects. Code style preferences can be enforced using ESLint or, if using JSON, with various JSON tools like the included `merge-json` CLI tool.  Works for a single developer or a team. Avoids bikeshedding as much as possible.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
