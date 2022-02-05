@@ -28,8 +28,6 @@ I've been a web developer for over 25 years[*](https://web.archive.org/web/19961
 
 ## About The Project
 
-
-
 <h3 align="center">This is my way of giving back to the web development community.</h3>
 
 ### No More Naming
