@@ -23,12 +23,21 @@
 </div>
 
 ## About Me
-I've been a web developer for over 25 years[*](https://web.archive.org/web/19961220192514/http://agate.net/), and in that time I've used vanilla CSS, Sass, Styletron, Styled Components, and everything in between. I've always wanted a CSS architecture that is _**predictable**_, _**maintainable**_, and that results in the absolute _**minimum possible output**_. I've distilled all of my experience into this tool.
+I've been a web developer for over 25 years[*](https://web.archive.org/web/19961220192514/http://agate.net/), and in that time I've used vanilla CSS, Sass, Styletron, Styled Components, and everything in between. I've always wanted a CSS architecture that is _**predictable**_, _**maintainable**_, and that results in the absolute _**minimum possible output**_. I've distilled all of my experience into this tool. @ptb/style the contribution I have wanted to make to the developer community for over 4 years. 
 
 
 ## About The Project
 
-<h3 align="center">This is my way of giving back to the web development community.</h3>
+<h3 align="center">This tool includes features that reduce or eliminate many common pain points that front end web developers encounter when designing and developing code for the web:</h3>
+-
+
+### Decrease Cognitive Overhead
+
+Don't worry about naming things, style order, specificity, compressing output, build tools, plugins, etc. Have I used this before? If I change it here, what else will change? What should I name this? Keeping all those concerns and details in mind is a thing of the past.
+
+### Simplicity
+
+Styles are declarable. This tool converts style rules applies them to the page.  There is only one function to learn and if you know CSS and JavaScript already, it will look very familiar. It parses styles, selectors, shortcuts, and media queries using a single function. It creates unique class names automatically. Styles are ordered simply and consistently.  Selectors are parsed, de-duplicated, and grouped with identical declarations automatically.
 
 ### No More Naming
 
@@ -54,57 +63,50 @@ Using `$`-prefixed variables, set up CSS property abbreviations, media query sho
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Flexibility
+### Flexibility
 
-### Dynamic Runtime
+#### Dynamic Runtime
 
 At its core, it is a JavaScript function that takes CSS styles stored as JS objects and returns class names that those styles represent.  The core of this library is a single JavaScript function that accepts a JavaScript object containing styles as input, which are parsed, cached, de-duplicated, and applied to the page at runtime responding dynamically as events make changes to the page.
 
-### …or Zero-Runtime
+#### …or Zero-Runtime
 Alternatively, styles can be "compiled away" leaving just class names and a minimized CSS file by using the Babel macro (and one-time setup).
 
 If you need client-side rendering (CSR), server-side rendering (SSR), or static at build time (SSG), it's covered.
 
-### Media Queries
+#### Media Queries
 
 Media queries can be specified at the top of a group of styles, at the bottom under the CSS property itself, or anywhere in between. Media queries can also be nested.
 
-### Any and All Selectors
+#### Any and All Selectors
 
 Use type selectors, class selectors, ID selectors, universal selectors, attribute selectors, state selectors, sibling, child, or descendant selectors, pseudo classes, and pseudo elements. The `&` nesting selector from Sass is also supported. In addition, `%`-prefixed placeholder class names and a special "self-selector" can be used when needed. The self- selector re-uses the `&` character to group a set of styles under a single class name. Atomic or grouped class names: it's your choice.
 
-### Simplicity
 
-Styles are declarable. This tool does one thing: converts style rules applies them to the page.  There is only one function to learn and if you know CSS and JavaScript already, it will look very familiar. It parses styles, selectors, shortcuts, and media queries using a single function. It creates unique class names automatically. Styles are ordered simply and consistently.  Selectors are parsed, de-duplicated, and grouped with identical declarations automatically.
-
-### Decrease Cognitive Overhead
-
-Don't worry about naming things, style order, specificity, compressing output, build tools, plugins, etc. Have I used this before? If I change it here, what else will change? What should I name this? Keeping all those concerns and details in mind is a thing of the past.
-
-### Maintainable
+#### Maintainable
 All styles are stored as plain JavaScript objects. Code style preferences can be enforced using ESLint or, if using JSON, with various JSON tools like the included `merge-json` CLI tool.  Works for a single developer or a team. Avoids bikeshedding as much as possible.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Customization
+### Customization
 
-### Theme Variables
+#### Theme Variables
 
 Store values in an easily accessible `$`-prefixed variable namespace.  Define values for colors, fonts, spacing, and utilize them anywhere in your project. Native CSS custom properties (CSS variables) are also supported. Both `$`-prefixed variables and custom properties can also be scoped to apply defferently in certain media queries if desired.
 
-### @media Shortcuts
+#### @media Shortcuts
 
 Set shortcuts for common media queries using the `$media` key. Define an object with the key you'd like to use and the value as the expanded media query feature (or type). Several media queries are pre-defined by default, but can be extended or overridden if desired. Shortcuts are built-in, but can be extended using your own.
 
-### CSS Property Shortcuts
+#### CSS Property Shortcuts
 
 Set abbreviations for CSS properties using `$properties` key. These are merged with the built-in Styled System shorthands.
 
-### Code Snippets
+#### Code Snippets
 
 Keep reusable groups of styles in `$`-prefixed variables and retrieve them using the `$`-prefixed variable name and the value of `true`.
 
-### Vendor Prefixes
+#### Vendor Prefixes
 
 Set an array of vendor prefixes for any property using the `$prefixes` key.
 
